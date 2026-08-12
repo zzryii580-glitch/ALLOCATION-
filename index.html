@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>China Capital Allocation Masterclass</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script>
+tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{serif:['Crimson Pro','Georgia','serif'],sans:['DM Sans','system-ui','sans-serif']}}}}
+</script>
+<style>
+:root{--tp:#1c1917;--ts:#57534e;--bg:#fafaf9;--bg2:#f5f5f4;--bg3:#e7e5e4;--bd:#d6d3d1;--ac:#c2410c;--card:#fff;--sb:#fff;--hdr:rgba(250,250,249,0.9);--qb:#fffbeb;--eb:#ecfdf5;--cb:#fffbeb;--xb:#eff6ff;--xbn:#93c5fd;--xlc:#1d4ed8;--tb:#f5f5f4;--th:#fafaf9}
+.dark{--tp:#fafaf9;--ts:#a8a29e;--bg:#0c0a09;--bg2:#1c1917;--bg3:#292524;--bd:#44403c;--ac:#f97316;--card:#1c1917;--sb:#0c0a09;--hdr:rgba(12,10,9,0.92);--qb:#292524;--eb:#052e16;--cb:#292524;--xb:#0c1929;--xbn:#1e3a5f;--xlc:#60a5fa;--tb:#1c1917;--th:#1c1917}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--tp);transition:background .3s,color .3s}
+.fr{font-family:'Crimson Pro',Georgia,serif}
+.ct p{font-family:'Crimson Pro',serif;font-size:1.15rem;line-height:1.85;margin:0 0 1rem;color:var(--tp)}
+.ct h2{font-family:'Crimson Pro',serif;font-size:1.7rem;font-weight:700;line-height:1.3;margin:2.5rem 0 .75rem;color:var(--tp)}
+.ct ul{font-family:'Crimson Pro',serif;font-size:1.15rem;line-height:1.85;margin:0 0 1rem;padding-left:1.5rem;color:var(--tp)}
+.ct li{margin-bottom:.3rem}.ct li::marker{color:var(--ac)}
+.ct blockquote{border-left:4px solid var(--ac);padding:.8rem 1.2rem;margin:1.2rem 0;background:var(--qb);border-radius:0 8px 8px 0}
+.ct blockquote p{margin:0;font-style:italic}
+.ct table{width:100%;border-collapse:collapse;margin:1.2rem 0;font-family:'DM Sans',sans-serif;font-size:.88rem}
+.ct thead{background:var(--tb)}.ct th{padding:.6rem .8rem;text-align:left;font-weight:600;border-bottom:2px solid var(--bd);color:var(--tp)}
+.ct td{padding:.55rem .8rem;border-bottom:1px solid var(--bd);color:var(--tp)}.ct tbody tr:hover{background:var(--th)}
+.ct .fm{background:var(--bg2);border:1px solid var(--bd);border-radius:10px;padding:1.2rem 1.5rem;margin:1.2rem 0;text-align:center;font-family:'Crimson Pro',serif;font-size:1.3rem;font-weight:600;color:var(--tp)}
+.ct .tk{background:var(--qb);border-left:4px solid var(--ac);border-radius:0 10px 10px 0;padding:1rem 1.2rem;margin:1.2rem 0}
+.ct .tk .lb{font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ac);margin-bottom:.4rem}
+.ct .tk p{margin:0}
+.ct .fl{text-align:center;padding:.5rem 0;margin:.5rem 0;font-family:'Crimson Pro',serif;font-size:1.1rem;color:var(--ts);line-height:1.8}
+.ct .fl .ar{color:var(--ac)}
+.ct .st{background:var(--bg2);border:1px solid var(--bd);border-radius:10px;padding:1rem 1.2rem;margin:.8rem 0}
+.ct .st .sn{font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:700;color:var(--ac);margin-bottom:.3rem}
+.ct .st div:last-child{font-family:'Crimson Pro',serif;font-size:1.1rem;line-height:1.8;color:var(--tp)}
+.ct .xz{background:var(--xb);border:2px solid var(--xbn);border-radius:10px;padding:1.2rem;margin:1.2rem 0}
+.ct .xz .lb{font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--xlc);margin-bottom:.4rem}
+.ct strong{font-weight:700;color:var(--tp)}
+.hdr{height:56px;background:var(--hdr);border-bottom:1px solid var(--bd);backdrop-filter:blur(12px);position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;padding:0 12px;gap:8px}
+.sb{width:280px;background:var(--sb);border-right:1px solid var(--bd);height:calc(100vh - 56px);position:fixed;top:56px;left:0;overflow-y:auto;z-index:35;transition:transform .3s}
+.tp{width:220px;background:var(--bg);border-left:1px solid var(--bd);height:calc(100vh - 56px);position:fixed;top:56px;right:0;overflow-y:auto;z-index:30;transition:transform .3s}
+.mc{margin-left:280px;margin-right:220px;padding-top:56px;min-height:100vh;transition:margin .3s}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:34;display:none}.ov.on{display:block}
+.fnav{position:fixed;bottom:0;left:280px;right:220px;z-index:40;padding:8px 16px;background:var(--hdr);border-top:1px solid var(--bd);backdrop-filter:blur(12px);transition:left .3s,right .3s}
+.bk-t{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ts);padding:.6rem .8rem .25rem}
+.ch-i{display:flex;align-items:center;gap:6px;padding:5px 10px;border-radius:6px;cursor:pointer;transition:background .12s;font-size:.8rem;color:var(--ts);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ch-i:hover{background:var(--bg3);color:var(--tp)}.ch-i.on{background:var(--bg3);color:var(--ac);font-weight:600}
+.ch-i.dn{color:#059669}.ch-i.dn::before{content:"\2713";font-size:.65rem;font-weight:900;flex-shrink:0}
+.tl{display:block;padding:4px 12px;font-size:.8rem;color:var(--ts);cursor:pointer;border-left:2px solid transparent}
+.tl:hover{color:var(--tp)}.tl.on{color:var(--ac);border-left-color:var(--ac);font-weight:600}
+.pb{height:3px;background:var(--bg3);border-radius:2px;overflow:hidden}.pf{height:100%;background:var(--ac);border-radius:2px;transition:width .4s}
+.smo{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);display:none;align-items:flex-start;justify-content:center;padding-top:8vh}
+.smo.on{display:flex}
+.sbx{background:var(--card);border:1px solid var(--bd);border-radius:14px;width:92%;max-width:560px;max-height:70vh;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.2)}
+.sin{width:100%;padding:14px 14px 14px 40px;border:none;background:transparent;font-size:1rem;color:var(--tp);outline:none;font-family:'DM Sans',sans-serif}
+.sri{padding:10px 14px;cursor:pointer;border-bottom:1px solid var(--bd);transition:background .12s}.sri:hover{background:var(--bg3)}
+.sri .st{font-weight:600;font-size:.85rem;color:var(--tp)}.sri .sc{font-size:.78rem;color:var(--ts);margin-top:2px}
+.tst{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(100px);padding:10px 20px;border-radius:10px;font-size:.85rem;font-weight:500;z-index:300;transition:transform .3s;box-shadow:0 8px 30px rgba(0,0,0,.15);white-space:nowrap}
+.tst.sh{transform:translateX(-50%) translateY(0)}.tst.ok{background:#059669;color:#fff}.tst.inf{background:var(--ac);color:#fff}
+.qo{display:block;width:100%;text-align:left;padding:10px 14px;border:2px solid var(--bd);border-radius:8px;cursor:pointer;transition:all .12s;background:var(--card);color:var(--tp);font-size:.88rem;margin-bottom:6px;font-family:'DM Sans',sans-serif}
+.qo:hover{border-color:var(--ac)}.qo.ok{border-color:#059669;background:var(--eb)}.qo.no{border-color:#dc2626;background:#fef2f2}.qo[disabled]{cursor:default;opacity:.85}
+.hg{background:linear-gradient(135deg,#431407 0%,#78350f 30%,#b45309 60%,#f59e0b 100%)}
+.cb{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0}
+.ch2{transition:transform .2s,box-shadow .2s}.ch2:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.1)}
+.dark .ch2:hover{box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.bmk.on{color:#d97706;transform:scale(1.15)}.bmk{transition:all .2s}
+@media(max-width:1024px){.sb{transform:translateX(-100%)}.sb.on{transform:translateX(0)}.tp{transform:translateX(100%)}.tp.on{transform:translateX(0)}.mc{margin-left:0!important;margin-right:0!important}.fnav{left:0;right:0}.dsk{display:none!important}}
+@media(min-width:1025px){.mob{display:none!important}}
+@keyframes fi{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}.fi{animation:fi .35s ease forwards}
+@keyframes su{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}.su{animation:su .5s ease forwards}
+.d1{animation-delay:.1s;opacity:0}.d2{animation-delay:.2s;opacity:0}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--bd);border-radius:3px}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <button class="mob" id="menuBtn" style="color:var(--tp);background:none;border:none;padding:8px;cursor:pointer;font-size:1.1rem"><i class="fas fa-bars"></i></button>
+  <a id="logoBtn" href="#" style="display:flex;align-items:center;gap:6px;text-decoration:none;flex-shrink:0">
+    <div class="hg" style="width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center"><i class="fas fa-landmark" style="color:#fff;font-size:.7rem"></i></div>
+    <span class="dsk" style="font-weight:700;font-size:.8rem;color:var(--tp)">CCAM</span>
+  </a>
+  <div id="BC" class="dsk" style="margin-left:12px;font-size:.8rem;color:var(--ts);display:flex;align-items:center;gap:4px;overflow:hidden;white-space:nowrap"></div>
+  <div style="flex:1"></div>
+  <button id="searchBtn" style="color:var(--ts);background:none;border:none;padding:8px;cursor:pointer"><i class="fas fa-search"></i></button>
+  <button id="themeBtn" style="color:var(--ts);background:none;border:none;padding:8px;cursor:pointer"><i class="fas fa-moon"></i></button>
+  <div class="hg" style="width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.65rem;font-weight:700;margin-left:4px">A</div>
+</header>
+
+<div class="ov" id="OV"></div>
+<aside class="sb" id="SB"><div style="padding:10px"><div style="padding:6px 10px 10px;margin-bottom:6px;border-bottom:1px solid var(--bd)"><div style="font-size:.75rem;font-weight:700;color:var(--tp)">China Capital Allocation</div><div style="font-size:.7rem;color:var(--ts);margin-top:1px">Masterclass</div><div class="pb" style="margin-top:8px"><div class="pf" id="GP" style="width:0%"></div></div><div style="font-size:.7rem;color:var(--ts);margin-top:3px" id="GPT">0% selesai</div></div><div id="SNAV"></div></div></aside>
+<aside class="tp dsk" id="TPC"><div style="padding:14px"><div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ts);margin-bottom:10px">Daftar Isi</div><div id="TOC"></div></div></aside>
+<main id="APP" class="mc"></main>
+<div class="fnav" id="FNAV" style="display:none"><div style="max-width:680px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:8px"><button id="FPRV" style="display:none;align-items:center;gap:6px;padding:8px 14px;border-radius:8px;font-size:.82rem;font-weight:500;background:var(--bg3);color:var(--tp);border:none;cursor:pointer"><i class="fas fa-arrow-left" style="font-size:.7rem"></i><span class="dsk"></span></button><button id="FDN" style="display:flex;align-items:center;gap:6px;padding:8px 18px;border-radius:8px;font-size:.82rem;font-weight:700;background:var(--ac);color:#fff;border:none;cursor:pointer"><i class="fas fa-circle" style="font-size:.6rem"></i><span class="dsk">Tandai Selesai</span></button><button id="FNXT" style="display:none;align-items:center;gap:6px;padding:8px 14px;border-radius:8px;font-size:.82rem;font-weight:500;background:var(--bg3);color:var(--tp);border:none;cursor:pointer"><span class="dsk"></span><i class="fas fa-arrow-right" style="font-size:.7rem"></i></button></div></div>
+<div class="tst" id="TST"></div>
+<div class="smo" id="SMO"><div class="sbx"><div style="position:relative"><i class="fas fa-search" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--ts);font-size:.85rem"></i><input class="sin" id="SIN" placeholder="Cari materi..."><kbd style="position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:.7rem;padding:2px 6px;border-radius:4px;background:var(--bg3);color:var(--ts);font-family:inherit">ESC</kbd></div><div id="SRS" style="max-height:50vh;overflow-y:auto"></div></div></div>
+
+<script>
+/* ================================================================
+   DATA — disimpan terpisah, string sederhana, tanpa karakter aneh
+   ================================================================ */
+var BOOKS = [
+  {
+    id:'buku-1', n:1, title:'Fondasi Resource & Capital Allocation',
+    obj:'Setelah menyelesaikan Buku I, pelajar diharapkan mampu:\n\n1. memahami apa sebenarnya capital;\n2. membedakan capital dengan cash;\n3. menghitung opportunity cost;\n4. menemukan bottleneck bisnis;\n5. memahami supply chain;\n6. memahami economies of scale;\n7. memahami ROIC;\n8. membedakan revenue dengan value creation;\n9. memahami strategic return;\n10. mulai berpikir seperti capital allocator.',
+    chapters:[
+      {id:'bab-1',num:1,title:'MEMAHAMI CAPITAL',secs:[
+        {id:'s1-1',title:'1.1 Apa itu Capital?',html:'<p>Capital secara sederhana adalah sumber daya yang digunakan untuk menghasilkan output ekonomi.</p><p>Banyak orang menganggap:</p><blockquote><p>Capital = uang.</p></blockquote><p>Ini terlalu sempit.</p><p>Dalam bisnis, capital dapat berupa:</p><ul><li>cash;</li><li>mesin;</li><li>tanah;</li><li>gedung;</li><li>pabrik;</li><li>teknologi;</li><li>patent;</li><li>software;</li><li>data;</li><li>tenaga manusia;</li><li>jaringan supplier;</li><li>distribution network;</li><li>brand;</li><li>intellectual property;</li><li>hubungan bisnis;</li><li>waktu manajemen.</li></ul><h2>Contoh</h2><p>Perusahaan A mempunyai:</p><ul><li>Rp10 miliar cash;</li><li>50 engineer;</li><li>software proprietary;</li><li>100 supplier;</li><li>20 distributor;</li><li>100.000 pelanggan.</li></ul><p>Perusahaan B mempunyai:</p><ul><li>Rp20 miliar cash;</li><li>tetapi tidak memiliki teknologi;</li><li>tidak memiliki supplier;</li><li>tidak memiliki pelanggan.</li></ul><p>Tidak berarti perusahaan B otomatis dua kali lebih kuat.</p><p>Mengapa?</p><p>Karena capital harus dinilai berdasarkan:</p><blockquote><p>kemampuan menghasilkan output ekonomi.</p></blockquote>'},
+        {id:'s1-2',title:'1.2 Financial Capital',html:'<p>Financial capital adalah sumber daya finansial.</p><h2>Contoh:</h2><ul><li>cash;</li><li>equity;</li><li>debt;</li><li>retained earnings;</li><li>investment capital.</li></ul><p>Financial capital digunakan untuk membiayai:</p><ul><li>inventory;</li><li>factory;</li><li>R&amp;D;</li><li>marketing;</li><li>acquisition;</li><li>employee;</li><li>technology.</li></ul>'},
+        {id:'s1-3',title:'1.3 Human Capital',html:'<p>Human capital adalah kemampuan manusia yang menghasilkan economic value.</p><h2>Contoh:</h2><p>Seorang engineer dapat menciptakan:</p><ul><li>software;</li><li>automation;</li><li>AI model;</li><li>manufacturing process;</li><li>paten.</li></ul>'}
+      ]}
+    ]
+  },
+  {
+    id:'buku-3', n:3, title:'Industrial China & Strategic Capital', obj:'',
+    chapters:[
+      {id:'bab-21',num:21,title:'PORTFOLIO OF BUSINESSES',secs:[
+        {id:'s21-1',title:'21.1 Apa itu Portfolio of Businesses?',html:'<p>Jika seorang entrepreneur hanya memiliki satu bisnis, pertanyaan utamanya:</p><blockquote><p>Ke mana modal bisnis ini harus dialokasikan?</p></blockquote><p>Tetapi jika sebuah grup memiliki 5, 10, atau 50 bisnis, masalahnya berubah menjadi:</p><blockquote><p>Bagaimana seluruh capital grup dialokasikan di antara berbagai bisnis?</p></blockquote><h2>Contoh:</h2><table><thead><tr><th>Bisnis</th><th>Capital</th><th>ROIC</th><th>Growth</th></tr></thead><tbody><tr><td>A</td><td>Rp20 M</td><td>5%</td><td>2%</td></tr><tr><td>B</td><td>Rp10 M</td><td>30%</td><td>20%</td></tr><tr><td>C</td><td>Rp15 M</td><td>18%</td><td>10%</td></tr><tr><td>D</td><td>Rp5 M</td><td>-5%</td><td>-10%</td></tr></tbody></table><p>Kesalahan besar adalah memberikan:</p><p>Rp12,5 M kepada setiap bisnis.</p><p>Mengapa?</p><p>Karena kualitas peluangnya berbeda.</p>'},
+        {id:'s21-2',title:'21.2 Capital Tidak Harus Dibagi Rata',html:'<p>Capital allocator bertanya:</p><p><strong>Bisnis A</strong></p><p>Apakah masih mempunyai peluang turnaround?</p><p><strong>Bisnis B</strong></p><p>Apakah dapat menyerap lebih banyak capital?</p><p><strong>Bisnis C</strong></p><p>Apakah sudah mature?</p><p><strong>Bisnis D</strong></p><p>Apakah harus dihentikan?</p><p>Jadi capital allocation dapat berbentuk:</p><ul><li>B naik</li><li>C tetap</li><li>A turun</li><li>D - Exit</li></ul>'},
+        {id:'s21-3',title:'21.3 Empat Kategori Bisnis',html:'<h2>1. Compounder</h2><p>ROIC tinggi + growth tinggi.</p><p>Beri capital.</p><h2>2. Cash Generator</h2><p>ROIC tinggi + growth rendah.</p><p>Ambil cash flow untuk membiayai peluang lain.</p><h2>3. Turnaround</h2><p>ROIC rendah tetapi dapat diperbaiki.</p><p>Investasi terbatas + eksperimen.</p><h2>4. Destroyer</h2><p>ROIC rendah + prospek buruk.</p><p>Kurangi atau keluar.</p>'},
+        {id:'s21-4',title:'21.4 Pertanyaan Portfolio',html:'<p>Untuk setiap bisnis:</p><ul><li>Berapa ROIC?</li><li>Berapa growth?</li><li>Berapa capital yang dibutuhkan?</li><li>Berapa lama opportunity bertahan?</li><li>Apakah ada moat?</li><li>Apakah ada strategic value?</li><li>Apakah bisnis dapat menyerap tambahan capital?</li><li>Apa opportunity cost-nya?</li></ul>'}
+      ]},
+      {id:'bab-22',num:22,title:'CAPITAL ALLOCATION ANTAR-BISNIS',secs:[
+        {id:'s22-1',title:'22.1 Masalah Utama',html:'<p>Misalnya grup memiliki:</p><p>Rp100 M.</p><p>Terdapat:</p><p><strong>Business A</strong></p><p>ROIC = 8%.</p><p><strong>Business B</strong></p><p>ROIC = 25%.</p><p><strong>Business C</strong></p><p>ROIC = 18%.</p><p><strong>Business D</strong></p><p>ROIC = 5%.</p><p>Jangan langsung:</p><p>B mendapatkan 100%.</p><p>Karena ada pertanyaan lain:</p><p>Berapa banyak capital yang dapat B serap dengan return yang tetap menarik?</p>'},
+        {id:'s22-2',title:'22.2 Reinvestment Capacity',html:'<p>Sebuah bisnis dapat mempunyai ROIC tinggi tetapi market opportunity kecil.</p><h2>Contoh:</h2><p>ROIC = 50%.</p><p>Tetapi hanya membutuhkan:</p><p>Rp1 M tambahan.</p><p>Sementara bisnis lain:</p><p>ROIC = 25%.</p><p>Tetapi mempunyai opportunity untuk menyerap:</p><p>Rp50 M.</p><p>Maka bisnis kedua mungkin memberikan dampak ekonomi lebih besar kepada grup.</p>'},
+        {id:'s22-3',title:'22.3 Capital Allocation Hierarchy',html:'<p>Gunakan urutan:</p><h2>1. Survival</h2><p>Pastikan bisnis tidak kekurangan liquidity.</p><h2>2. High-return reinvestment</h2><p>Investasikan pada proyek internal dengan economics kuat.</p><h2>3. Strategic investment</h2><p>Bangun capability penting.</p><h2>4. Acquisition</h2><p>Jika acquisition memberikan value yang masuk akal.</p><h2>5. Debt reduction</h2><p>Jika leverage terlalu tinggi.</p><h2>6. Return capital</h2><p>Jika tidak ada opportunity menarik.</p>'},
+        {id:'s22-4',title:'22.4 Internal Capital Market',html:'<p>Sebuah grup perusahaan dapat bertindak seperti:</p><blockquote><p>internal capital market.</p></blockquote><p>Bisnis yang menghasilkan cash dapat membiayai bisnis lain.</p><h2>Contoh:</h2><p><strong>Business A:</strong></p><p>Cash flow = Rp20 M.</p><p><strong>Business B:</strong></p><p>Membutuhkan Rp15 M untuk ekspansi.</p><p>Grup dapat memindahkan capital A ke B.</p><p>Ini memungkinkan:</p><p>capital bergerak di dalam ecosystem perusahaan.</p>'}
+      ]},
+      {id:'bab-23',num:23,title:'GOVERNMENT + INDUSTRY + CAPITAL',secs:[
+        {id:'s23-1',title:'23.1 Mengapa Ini Penting untuk Memahami China?',html:'<p>Untuk menganalisis bisnis di China, jangan hanya melihat:</p><p>perusahaan.</p><p>Lihat tiga lapisan:</p><div class="fl">Policy<br><span class="ar">↓</span><br>Industry<br><span class="ar">↓</span><br>Company</div>'},
+        {id:'s23-2',title:'23.2 Policy',html:'<p>Kebijakan dapat memengaruhi:</p><ul><li>infrastructure;</li><li>financing;</li><li>technology;</li><li>energy;</li><li>manufacturing;</li><li>trade;</li><li>
